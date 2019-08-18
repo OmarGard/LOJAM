@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from omargard.citaland.com/mapa3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Aug 2019 23:08:45 GMT -->
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+		 var myLatLng1 = {lat: 37.387474, lng: -122.05754339999999};
+		 var myLatLng2 = {lat: 34.0522342, lng: -118.2436849};
+		 var myLatLng3 = {lat: 36.7468422, lng: -119.7725868};
+	 	 var myLatLng4 = {lat: 47.6062095, lng: -122.3320708};
+		 var myLatLng5 = {lat: 49.2827291, lng: -123.12073750000002};
+		 var myLatLng6 = {lat: 45.4215296, lng: -75.69719309999999};
+		var myLatLng7 = {lat: 44.977753, lng: -93.26501080000003};
+		var myLatLng8 = {lat: 39.011902, lng: -98.48424649999998};
+		var myLatLng9 = {lat: 22.198745, lng: 113.54387300000008};
+		var myLatLng10 = {lat: 36.1699412, lng: -115.13982959999998};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng4,
+		  scrollwheel: false
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'New Zeland'
+        });
+		var marker1 = new google.maps.Marker({
+          position: myLatLng1,
+          map: map,
+          title: 'Sillicon Valley'
+        });
+		var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Los Ángeles'
+        });
+		var marker3 = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Fresno'
+        });
+		var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Seattle'
+        });
+		var marker5 = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Vancouver'
+        });
+		var marker6 = new google.maps.Marker({
+          position: myLatLng6,
+          map: map,
+          title: 'Ottawa'
+        });
+		var marker7 = new google.maps.Marker({
+          position: myLatLng7,
+          map: map,
+          title: 'Minneapolis'
+        });
+		var marker8 = new google.maps.Marker({
+          position: myLatLng8,
+          map: map,
+          title: 'Kansas'
+        });
+		var marker9 = new google.maps.Marker({
+          position: myLatLng9,
+          map: map,
+          title: 'Macao'
+        });
+		var marker10 = new google.maps.Marker({
+          position: myLatLng10,
+          map: map,
+          title: 'Las Vegas'
+        });
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAo2chdVtxtTpX-9cMeUPVE82sMIEGnoM&amp;callback=initMap">
+    </script>
+  </body>
+
+<!-- Mirrored from omargard.citaland.com/mapa3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Aug 2019 23:08:45 GMT -->
+</html>

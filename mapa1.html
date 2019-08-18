@@ -1,0 +1,104 @@
+﻿<html>
+  
+<!-- Mirrored from omargard.citaland.com/mapa1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Aug 2019 23:08:45 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+	<script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+		var myLatLng1 = {lat: 40.7127837, lng: -74.00594130000002};
+		var myLatLng2 = {lat: 52.95478319999999, lng: -1.1581085999999914};
+		var myLatLng3 = {lat: 40.4167754, lng: -3.7037901999999576};
+		var myLatLng4 = {lat: 41.3850639, lng: 2.1734034999999494};
+		var myLatLng5 = {lat: 38.7222524, lng: -9.139336599999979};
+		var myLatLng6 = {lat: 39.4752765, lng: -6.3724247000000105};
+		var myLatLng7 = {lat: 55.755826, lng: 37.6173};
+		var myLatLng8 = {lat: 44.4267674, lng: 26.102538399999958};
+		var myLatLng9 = {lat: 52.52000659999999, lng: 13.404953999999975};
+		var myLatLng10 = {lat: 25.7616798, lng: -80.19179020000001};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: myLatLng2,
+		  scrollwheel: false
+        });
+		
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Nueva Zelanda'
+        });
+		var marker1 = new google.maps.Marker({
+          position: myLatLng1,
+          map: map,
+          title: 'New York'
+        });
+		var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Nottingham'
+        });
+		var marker3 = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Madrid'
+        });
+		var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Barcelona'
+        });
+		var marker5 = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Lisboa'
+        });
+		var marker6 = new google.maps.Marker({
+          position: myLatLng6,
+          map: map,
+          title: 'Cáceres'
+        });
+		var marker7 = new google.maps.Marker({
+          position: myLatLng7,
+          map: map,
+          title: 'Bucarest'
+        });
+		var marker8 = new google.maps.Marker({
+          position: myLatLng8,
+          map: map,
+          title: 'Moscú'
+        });
+		var marker9 = new google.maps.Marker({
+          position: myLatLng9,
+          map: map,
+          title: 'Berlín'
+        });
+		var marker10 = new google.maps.Marker({
+          position: myLatLng10,
+          map: map,
+          title: 'Miami'
+        });
+      }
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAo2chdVtxtTpX-9cMeUPVE82sMIEGnoM&amp;callback=initMap"></script>
+  </body>
+
+<!-- Mirrored from omargard.citaland.com/mapa1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Aug 2019 23:08:45 GMT -->
+</html>
+
